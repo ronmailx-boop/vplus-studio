@@ -3,26 +3,44 @@
 ## Overview
 דף נחיתה (Landing Page) עבור Vplus Studio - סטודיו פיתוח אפליקציות מובייל.
 המטרה: עמידה בדרישות אימות "Organization" של Google Play, מתארח ב-GitHub Pages.
+כתובת האתר: https://ronmailx-boop.github.io/vplus-studio/
 
 ## Tasks
-- [x] יצירת `index.html` - עמוד נחיתה עצמאי (HTML + CSS מוטמע), עיצוב כהה (Dark Theme), Mobile-First, RTL.
+- [x] יצירת `index.html` - עמוד נחיתה עצמאי (HTML + CSS מוטמע), עיצוב כהה (Dark Theme), Mobile-First.
   - Header עם שם המותג "Vplus Studio".
   - Hero Section עם כותרת טכנולוגית ותת-כותרת.
   - Contact Section עם קישור mailto ל-vplus.studio.apps@gmail.com.
-  - Footer עם שורת זכויות יוצרים © 2026 Ron Lupovich - Vplus Studio.
+  - Footer עם שורת זכויות יוצרים © 2026 Vplus Studio.
+- [x] הסרת שם פרטי (Ron Lupovich) משורת הזכויות בפוטר, לבקשת המשתמש.
+- [x] שילוב לוגו מותג (SVG שסופק ע"י המשתמש) בהדר, בתוך "badge" רקע בהיר כדי לשמור על ניגודיות מול הרקע הכהה.
+- [x] הפיכת האתר לדו-לשוני (אנגלית/עברית):
+  - **אנגלית היא ברירת המחדל** (`lang="en"`, `dir="ltr"`).
+  - כפתור החלפת שפה בהדר (מחליף טקסט, `lang`, `dir` בזמן אמת ללא רענון).
+  - שמירת בחירת השפה ב-`localStorage`.
+- [x] הוספת PWA Manifest ואייקוני אפליקציה להתקנה דרך Chrome באנדרואיד:
+  - `manifest.json` עם `display: standalone`, צבעי מותג, ואייקונים.
+  - אייקון מרובע בעיצוב "V+" על גרדיאנט המותג, ב-192px/512px, כולל גרסת `maskable`.
+  - `<link rel="manifest">`, `theme-color`, ו-favicon ב-`index.html`.
 - [ ] מסמכים משפטיים (`docs/legal/`) - טרם נוצרו: privacy-policy, terms-of-service, cookie-policy, accessibility-statement.
 - [ ] בדיקת התאמה סופית מול דרישות Google Play Organization Verification.
 
 ## Files Changed
-- `index.html` (נוצר) - עמוד הנחיתה המלא.
-- `PROJECT_STATE.md` (נוצר) - קובץ זיכרון והמשכיות.
+- `index.html` - עמוד הנחיתה המלא (דו-לשוני, לוגו, PWA meta tags).
+- `assets/logo.svg` - לוגו המותג (Wordmark) המוצג בהדר.
+- `icons/icon.svg`, `icons/icon-maskable.svg` - מקורות SVG לאייקון האפליקציה (רגיל ו-maskable).
+- `icons/icon-192.png`, `icons/icon-512.png`, `icons/icon-maskable-192.png`, `icons/icon-maskable-512.png` - אייקוני PNG מוכנים ל-PWA/Android.
+- `manifest.json` - Web App Manifest להתקנת האתר כאפליקציה.
+- `PROJECT_STATE.md` - קובץ זיכרון והמשכיות.
 
 ## Decisions
 - צבעים: רקע `#1E1B3A`, אקסנטים `#7c4ddb` (סגול) ו-`#0d9488`/`#5eead4` (טיל).
 - פונט: Inter (Google Fonts) עם נפילה ל-system fonts.
-- ללא frameworks חיצוניים (HTML/CSS טהור בלבד).
-- טקסט התוכן בעברית עם RTL מלא; כתובת המייל נשארת LTR (unicode-bidi: isolate) לקריאות נכונה.
+- ללא frameworks חיצוניים (HTML/CSS/JS טהורים בלבד, ה-JS מוגבל למתג השפה).
+- דו-לשוניות מנוהלת דרך אובייקט תרגומים ב-JS + `data-i18n` attributes; אין תלות בספרייה חיצונית.
+- הלוגו הכהה (`#241f42`) עטוף ב-badge בהיר כדי לשמור על קריאות מול הרקע הכהה של האתר.
+- כל שינוי עובר בזרימה: יצירת/עדכון קבצים → commit ב-branch → PR → merge ל-`main` (לבקשת המשתמש, כל השינויים מוזגים ישירות).
+- GitHub Pages בנוי מ-`main` ("Deploy from a branch") - כל merge מפעיל build אוטומטי.
 
 ## Current Focus
-הושלם: יצירת index.html מלאה לפי הדרישות ודחיפה לברנץ'.
-הצעד הבא (אם יתבקש): יצירת מסמכי docs/legal/ הנדרשים (מדיניות פרטיות, תנאי שימוש, מדיניות עוגיות, הצהרת נגישות) בהתאם ל-IS 5568 / WCAG 2.1 AA ו-GDPR.
+הושלם: index.html מלא, לוגו מותג, דו-לשוניות (אנגלית כברירת מחדל + מתג עברית), ו-PWA manifest + אייקונים להתקנה באנדרואיד. הכל מוזג ל-`main` וחי באתר.
+הצעד הבא (אם יתבקש): יצירת מסמכי `docs/legal/` הנדרשים (מדיניות פרטיות, תנאי שימוש, מדיניות עוגיות, הצהרת נגישות) בהתאם ל-IS 5568 / WCAG 2.1 AA ו-GDPR, ותרגומם גם לאנגלית בהתאם למבנה הדו-לשוני של האתר.
