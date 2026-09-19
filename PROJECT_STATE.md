@@ -24,7 +24,7 @@
 - [x] מסמכים משפטיים (`docs/legal/`) - נוצרו כטיוטות ראשוניות עם placeholders: privacy-policy, terms-of-service, cookie-policy, accessibility-statement (עברית פורמלית).
 - [ ] השלמת ה-placeholders במסמכים המשפטיים (שם עסק, מספר עוסק/ח.פ., כתובת, רכז נגישות וכו') ואישורם - **ממתין** לרישום עוסק פטור (ראה Decisions).
 - [x] תרגום מסמכי docs/legal לאנגלית - נוצרו תחת `docs/legal/en/` (אותם שמות קבצים, תוכן זהה במבנה, placeholders תואמים).
-- [ ] קישור מסמכי docs/legal (עברית + אנגלית) מתוך footer האתר, אם יתבקש.
+- [x] קישור מסמכי docs/legal (עברית + אנגלית) מתוך footer האתר - נוצרו עמודי HTML מעוצבים (`assets/legal.css`) לכל מסמך, וה-footer מקשר לגרסה המתאימה לפי השפה הנבחרת (מתעדכן דינמית עם מתג השפה).
 - [ ] בדיקת התאמה סופית מול דרישות Google Play Organization Verification.
 
 ## Files Changed
@@ -35,6 +35,8 @@
 - `manifest.json` - Web App Manifest להתקנת האתר כאפליקציה.
 - `docs/legal/privacy-policy.md`, `docs/legal/terms-of-service.md`, `docs/legal/cookie-policy.md`, `docs/legal/accessibility-statement.md` - טיוטות מסמכים משפטיים בעברית פורמלית, עם placeholders להשלמה.
 - `docs/legal/en/*.md` - תרגום אנגלי מלא לכל 4 המסמכים הנ"ל (אותו מבנה ו-placeholders).
+- `docs/legal/*.html`, `docs/legal/en/*.html` - עמודי HTML מעוצבים (Dark Theme, RTL/LTR) שנוצרו מתוך ה-Markdown, עם קישור חזרה לעמוד הבית.
+- `assets/legal.css` - עיצוב משותף לעמודי המסמכים המשפטיים.
 - `PROJECT_STATE.md` - קובץ זיכרון והמשכיות.
 
 ## Decisions
@@ -43,10 +45,11 @@
 - ללא frameworks חיצוניים (HTML/CSS/JS טהורים בלבד, ה-JS מוגבל למתג השפה).
 - דו-לשוניות מנוהלת דרך אובייקט תרגומים ב-JS + `data-i18n` attributes; אין תלות בספרייה חיצונית.
 - הלוגו הכהה (`#241f42`) עטוף ב-badge בהיר כדי לשמור על קריאות מול הרקע הכהה של האתר.
+- קבצי ה-`.html` תחת `docs/legal/` נוצרים אוטומטית מתוך קבצי ה-`.md` (המקור האמיתי/single source of truth) - **אין לערוך את ה-HTML ישירות**; יש לערוך את ה-Markdown ואז ליצור מחדש את ה-HTML התואם.
 - כל שינוי עובר בזרימה: יצירת/עדכון קבצים → commit ב-branch → PR → merge ל-`main` (לבקשת המשתמש, כל השינויים מוזגים ישירות).
 - GitHub Pages בנוי מ-`main` ("Deploy from a branch") - כל merge מפעיל build אוטומטי.
 - **סטטוס עסקי:** נכון להיום אין ח.פ/עוסק רשום. המשתמש בכוונתו להירשם כ**עוסק פטור** בהמשך. עד אז, ה-placeholder של "מספר עוסק/ח.פ." במסמכים המשפטיים נשאר ריק במכוון. כמו כן, בהתאם לכך ייתכן שיש לפתוח את חשבון המפתח ב-Google Play Console כ-"Individual" ולא כ-"Organization" עד להשלמת הרישום (חשבון Organization דורש אימות מול גוף עסקי רשום).
 
 ## Current Focus
-הושלם: index.html מלא, לוגו מותג, דו-לשוניות (אנגלית כברירת מחדל + מתג עברית), PWA manifest + אייקונים להתקנה באנדרואיד, וטיוטות של 4 מסמכי docs/legal בעברית ובאנגלית (`docs/legal/` ו-`docs/legal/en/`), עם placeholders.
-הצעד הבא (אם יתבקש): (1) להשלים את ה-placeholders במסמכים המשפטיים מול המשתמש לאחר רישום כעוסק פטור, (2) לשקול קישור המסמכים מתוך footer האתר (עם קישור מתאים לפי השפה הנבחרת).
+הושלם: index.html מלא, לוגו מותג, דו-לשוניות (אנגלית כברירת מחדל + מתג עברית), PWA manifest + אייקונים להתקנה באנדרואיד, 4 מסמכי docs/legal בעברית ובאנגלית עם placeholders, עמודי HTML מעוצבים לכל מסמך, וקישורי footer דו-לשוניים אליהם.
+הצעד הבא (אם יתבקש): להשלים את ה-placeholders במסמכים המשפטיים (עברית + אנגלית, וכן ה-.md וה-.html המתאימים) מול המשתמש לאחר רישום כעוסק פטור.

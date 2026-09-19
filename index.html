@@ -470,6 +470,12 @@
 
   <footer>
     <div data-i18n="footerText">© 2026 Vplus Studio. All rights reserved.</div>
+    <div class="footer-links">
+      <a data-i18n="footerPrivacy" data-href-en="docs/legal/en/privacy-policy.html" data-href-he="docs/legal/privacy-policy.html" href="docs/legal/en/privacy-policy.html">Privacy Policy</a>
+      <a data-i18n="footerTerms" data-href-en="docs/legal/en/terms-of-service.html" data-href-he="docs/legal/terms-of-service.html" href="docs/legal/en/terms-of-service.html">Terms of Service</a>
+      <a data-i18n="footerCookies" data-href-en="docs/legal/en/cookie-policy.html" data-href-he="docs/legal/cookie-policy.html" href="docs/legal/en/cookie-policy.html">Cookie Policy</a>
+      <a data-i18n="footerAccessibility" data-href-en="docs/legal/en/accessibility-statement.html" data-href-he="docs/legal/accessibility-statement.html" href="docs/legal/en/accessibility-statement.html">Accessibility Statement</a>
+    </div>
   </footer>
 
   <script>
@@ -495,6 +501,10 @@
           contactTitle: "Have a question or inquiry?",
           contactText: "We'd love to hear from you. Feel free to reach out directly via our support email.",
           footerText: "© 2026 Vplus Studio. All rights reserved.",
+          footerPrivacy: "Privacy Policy",
+          footerTerms: "Terms of Service",
+          footerCookies: "Cookie Policy",
+          footerAccessibility: "Accessibility Statement",
           langToggleLabel: "עברית"
         },
         he: {
@@ -517,6 +527,10 @@
           contactTitle: "יש לכם שאלה או פנייה?",
           contactText: "נשמח לשמוע מכם. ניתן לפנות אלינו ישירות במייל התמיכה שלנו.",
           footerText: "© 2026 Vplus Studio. All rights reserved.",
+          footerPrivacy: "מדיניות פרטיות",
+          footerTerms: "תנאי שימוש",
+          footerCookies: "מדיניות עוגיות",
+          footerAccessibility: "הצהרת נגישות",
           langToggleLabel: "English"
         }
       };
@@ -532,6 +546,10 @@
           if (dict[key] !== undefined) {
             el.textContent = dict[key];
           }
+        });
+
+        document.querySelectorAll("[data-href-en][data-href-he]").forEach(function (el) {
+          el.setAttribute("href", el.getAttribute(lang === "he" ? "data-href-he" : "data-href-en"));
         });
 
         var toggleBtn = document.getElementById("langToggle");
