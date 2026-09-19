@@ -68,27 +68,20 @@
   .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 1.25rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
   }
 
-  .logo-mark {
+  .logo-badge {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    width: 34px;
-    height: 34px;
+    padding: 6px 14px;
     border-radius: 10px;
-    background: linear-gradient(135deg, var(--accent-purple), var(--accent-teal));
-    color: #fff;
-    font-weight: 800;
-    font-size: 1rem;
+    background: #f5f4fb;
   }
 
-  .logo-text .plus {
-    color: var(--accent-teal-light);
+  .logo-img {
+    display: block;
+    height: 26px;
+    width: auto;
   }
 
   nav a.nav-cta {
@@ -384,8 +377,9 @@
   <header>
     <div class="header-inner">
       <div class="logo">
-        <span class="logo-mark">V+</span>
-        <span class="logo-text">Vplus<span class="plus"> Studio</span></span>
+        <span class="logo-badge">
+          <img class="logo-img" src="assets/logo.svg" alt="Vplus Studio">
+        </span>
       </div>
       <nav>
         <a class="nav-cta" href="mailto:vplus.studio.apps@gmail.com">צור קשר</a>
