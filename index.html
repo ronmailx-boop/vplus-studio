@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -84,6 +84,12 @@
     width: auto;
   }
 
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
   nav a.nav-cta {
     display: inline-block;
     padding: 9px 20px;
@@ -100,6 +106,25 @@
   nav a.nav-cta:hover {
     transform: translateY(-1px);
     box-shadow: 0 8px 20px rgba(124, 77, 219, 0.35);
+  }
+
+  .lang-toggle {
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+
+  .lang-toggle:hover {
+    border-color: var(--accent-teal-light);
+    color: var(--accent-teal-light);
   }
 
   /* Hero */
@@ -382,7 +407,8 @@
         </span>
       </div>
       <nav>
-        <a class="nav-cta" href="mailto:vplus.studio.apps@gmail.com">צור קשר</a>
+        <button type="button" class="lang-toggle" id="langToggle" onclick="toggleLang()">עברית</button>
+        <a class="nav-cta" data-i18n="navCta" href="mailto:vplus.studio.apps@gmail.com">Contact</a>
       </nav>
     </div>
   </header>
@@ -390,48 +416,48 @@
   <main>
     <section class="hero">
       <div class="hero-content">
-        <span class="eyebrow">Vplus Studio</span>
-        <h1>Building Smart <span class="highlight">Android Experiences</span></h1>
-        <p>
-          אנחנו סטודיו פיתוח אפליקציות המתמחה ביצירת אפליקציות מובייל וכלי פרודוקטיביות
-          חכמים, מהירים ואמינים עבור מערכת Android.
+        <span class="eyebrow" data-i18n="heroEyebrow">Vplus Studio</span>
+        <h1><span data-i18n="heroTitleStart">Building Smart</span> <span class="highlight" data-i18n="heroTitleHighlight">Android Experiences</span></h1>
+        <p data-i18n="heroText">
+          We are a mobile app development studio specializing in creating smart, fast,
+          and reliable productivity tools and apps for Android.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="mailto:vplus.studio.apps@gmail.com">דברו איתנו</a>
-          <a class="btn btn-secondary" href="#about">קצת עלינו</a>
+          <a class="btn btn-primary" data-i18n="heroPrimaryBtn" href="mailto:vplus.studio.apps@gmail.com">Contact Us</a>
+          <a class="btn btn-secondary" data-i18n="heroSecondaryBtn" href="#about">About Us</a>
         </div>
       </div>
     </section>
 
     <section id="about">
       <div class="section-header">
-        <span class="tag">מה אנחנו עושים</span>
-        <h2>פיתוח אפליקציות ממוקד ואיכותי</h2>
-        <p>אנחנו בונים כלים דיגיטליים שפותרים בעיות אמיתיות - בדגש על ביצועים, פשטות ועיצוב נקי.</p>
+        <span class="tag" data-i18n="aboutTag">What We Do</span>
+        <h2 data-i18n="aboutTitle">Focused, Quality App Development</h2>
+        <p data-i18n="aboutText">We build digital tools that solve real problems — with an emphasis on performance, simplicity, and clean design.</p>
       </div>
       <div class="features-grid">
         <div class="feature-card">
           <div class="feature-icon">📱</div>
-          <h3>אפליקציות מובייל</h3>
-          <p>פיתוח אפליקציות Android מקצועיות, יציבות ומותאמות לחוויית משתמש מודרנית.</p>
+          <h3 data-i18n="feature1Title">Mobile Apps</h3>
+          <p data-i18n="feature1Text">Professional, stable Android app development tailored to a modern user experience.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">⚡</div>
-          <h3>כלי פרודוקטיביות</h3>
-          <p>כלים חכמים שעוזרים למשתמשים לנהל את הזמן והמשימות שלהם בצורה יעילה יותר.</p>
+          <h3 data-i18n="feature2Title">Productivity Tools</h3>
+          <p data-i18n="feature2Text">Smart tools that help users manage their time and tasks more efficiently.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🔒</div>
-          <h3>אמינות ואבטחה</h3>
-          <p>שימת דגש על פרטיות, אבטחת מידע ואמינות בכל שלב בפיתוח המוצר.</p>
+          <h3 data-i18n="feature3Title">Reliability &amp; Security</h3>
+          <p data-i18n="feature3Text">A strong focus on privacy, data security, and reliability at every stage of development.</p>
         </div>
       </div>
     </section>
 
     <section class="contact" id="contact">
       <div class="contact-card">
-        <h2>יש לכם שאלה או פנייה?</h2>
-        <p>נשמח לשמוע מכם. ניתן לפנות אלינו ישירות במייל התמיכה שלנו.</p>
+        <h2 data-i18n="contactTitle">Have a question or inquiry?</h2>
+        <p data-i18n="contactText">We'd love to hear from you. Feel free to reach out directly via our support email.</p>
         <a class="email-link" href="mailto:vplus.studio.apps@gmail.com">
           ✉️ vplus.studio.apps@gmail.com
         </a>
@@ -440,8 +466,97 @@
   </main>
 
   <footer>
-    <div>© 2026 Vplus Studio. All rights reserved.</div>
+    <div data-i18n="footerText">© 2026 Vplus Studio. All rights reserved.</div>
   </footer>
+
+  <script>
+    (function () {
+      var translations = {
+        en: {
+          navCta: "Contact",
+          heroEyebrow: "Vplus Studio",
+          heroTitleStart: "Building Smart",
+          heroTitleHighlight: "Android Experiences",
+          heroText: "We are a mobile app development studio specializing in creating smart, fast, and reliable productivity tools and apps for Android.",
+          heroPrimaryBtn: "Contact Us",
+          heroSecondaryBtn: "About Us",
+          aboutTag: "What We Do",
+          aboutTitle: "Focused, Quality App Development",
+          aboutText: "We build digital tools that solve real problems — with an emphasis on performance, simplicity, and clean design.",
+          feature1Title: "Mobile Apps",
+          feature1Text: "Professional, stable Android app development tailored to a modern user experience.",
+          feature2Title: "Productivity Tools",
+          feature2Text: "Smart tools that help users manage their time and tasks more efficiently.",
+          feature3Title: "Reliability & Security",
+          feature3Text: "A strong focus on privacy, data security, and reliability at every stage of development.",
+          contactTitle: "Have a question or inquiry?",
+          contactText: "We'd love to hear from you. Feel free to reach out directly via our support email.",
+          footerText: "© 2026 Vplus Studio. All rights reserved.",
+          langToggleLabel: "עברית"
+        },
+        he: {
+          navCta: "צור קשר",
+          heroEyebrow: "Vplus Studio",
+          heroTitleStart: "בונים חוויות",
+          heroTitleHighlight: "אנדרואיד חכמות",
+          heroText: "אנחנו סטודיו פיתוח אפליקציות המתמחה ביצירת אפליקציות מובייל וכלי פרודוקטיביות חכמים, מהירים ואמינים עבור מערכת Android.",
+          heroPrimaryBtn: "דברו איתנו",
+          heroSecondaryBtn: "קצת עלינו",
+          aboutTag: "מה אנחנו עושים",
+          aboutTitle: "פיתוח אפליקציות ממוקד ואיכותי",
+          aboutText: "אנחנו בונים כלים דיגיטליים שפותרים בעיות אמיתיות - בדגש על ביצועים, פשטות ועיצוב נקי.",
+          feature1Title: "אפליקציות מובייל",
+          feature1Text: "פיתוח אפליקציות Android מקצועיות, יציבות ומותאמות לחוויית משתמש מודרנית.",
+          feature2Title: "כלי פרודוקטיביות",
+          feature2Text: "כלים חכמים שעוזרים למשתמשים לנהל את הזמן והמשימות שלהם בצורה יעילה יותר.",
+          feature3Title: "אמינות ואבטחה",
+          feature3Text: "שימת דגש על פרטיות, אבטחת מידע ואמינות בכל שלב בפיתוח המוצר.",
+          contactTitle: "יש לכם שאלה או פנייה?",
+          contactText: "נשמח לשמוע מכם. ניתן לפנות אלינו ישירות במייל התמיכה שלנו.",
+          footerText: "© 2026 Vplus Studio. All rights reserved.",
+          langToggleLabel: "English"
+        }
+      };
+
+      function applyLang(lang) {
+        var dict = translations[lang] || translations.en;
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === "he" ? "rtl" : "ltr";
+        document.documentElement.setAttribute("data-current-lang", lang);
+
+        document.querySelectorAll("[data-i18n]").forEach(function (el) {
+          var key = el.getAttribute("data-i18n");
+          if (dict[key] !== undefined) {
+            el.textContent = dict[key];
+          }
+        });
+
+        var toggleBtn = document.getElementById("langToggle");
+        if (toggleBtn) {
+          toggleBtn.textContent = dict.langToggleLabel;
+        }
+
+        try {
+          localStorage.setItem("vplus-lang", lang);
+        } catch (e) {}
+      }
+
+      function getInitialLang() {
+        try {
+          var saved = localStorage.getItem("vplus-lang");
+          if (saved === "en" || saved === "he") return saved;
+        } catch (e) {}
+        return "en";
+      }
+
+      window.toggleLang = function () {
+        var current = document.documentElement.getAttribute("data-current-lang") || "en";
+        applyLang(current === "en" ? "he" : "en");
+      };
+
+      applyLang(getInitialLang());
+    })();
+  </script>
 
 </body>
 </html>
