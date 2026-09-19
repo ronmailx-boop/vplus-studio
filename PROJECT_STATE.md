@@ -21,7 +21,9 @@
   - `manifest.json` עם `display: standalone`, צבעי מותג, ואייקונים.
   - אייקון מרובע בעיצוב "V+" על גרדיאנט המותג, ב-192px/512px, כולל גרסת `maskable`.
   - `<link rel="manifest">`, `theme-color`, ו-favicon ב-`index.html`.
-- [ ] מסמכים משפטיים (`docs/legal/`) - טרם נוצרו: privacy-policy, terms-of-service, cookie-policy, accessibility-statement.
+- [x] מסמכים משפטיים (`docs/legal/`) - נוצרו כטיוטות ראשוניות עם placeholders: privacy-policy, terms-of-service, cookie-policy, accessibility-statement (עברית פורמלית).
+- [ ] השלמת ה-placeholders במסמכים המשפטיים (שם עסק, מספר עוסק/ח.פ., כתובת, רכז נגישות וכו') ואישורם.
+- [ ] קישור מסמכי docs/legal מתוך footer האתר (אם יתבקש), כולל גרסה מתורגמת לאנגלית בהתאם למבנה הדו-לשוני.
 - [ ] בדיקת התאמה סופית מול דרישות Google Play Organization Verification.
 
 ## Files Changed
@@ -30,6 +32,7 @@
 - `icons/icon.svg`, `icons/icon-maskable.svg` - מקורות SVG לאייקון האפליקציה (רגיל ו-maskable).
 - `icons/icon-192.png`, `icons/icon-512.png`, `icons/icon-maskable-192.png`, `icons/icon-maskable-512.png` - אייקוני PNG מוכנים ל-PWA/Android.
 - `manifest.json` - Web App Manifest להתקנת האתר כאפליקציה.
+- `docs/legal/privacy-policy.md`, `docs/legal/terms-of-service.md`, `docs/legal/cookie-policy.md`, `docs/legal/accessibility-statement.md` - טיוטות מסמכים משפטיים בעברית פורמלית, עם placeholders להשלמה.
 - `PROJECT_STATE.md` - קובץ זיכרון והמשכיות.
 
 ## Decisions
@@ -42,5 +45,5 @@
 - GitHub Pages בנוי מ-`main` ("Deploy from a branch") - כל merge מפעיל build אוטומטי.
 
 ## Current Focus
-הושלם: index.html מלא, לוגו מותג, דו-לשוניות (אנגלית כברירת מחדל + מתג עברית), ו-PWA manifest + אייקונים להתקנה באנדרואיד. הכל מוזג ל-`main` וחי באתר.
-הצעד הבא (אם יתבקש): יצירת מסמכי `docs/legal/` הנדרשים (מדיניות פרטיות, תנאי שימוש, מדיניות עוגיות, הצהרת נגישות) בהתאם ל-IS 5568 / WCAG 2.1 AA ו-GDPR, ותרגומם גם לאנגלית בהתאם למבנה הדו-לשוני של האתר.
+הושלם: index.html מלא, לוגו מותג, דו-לשוניות (אנגלית כברירת מחדל + מתג עברית), PWA manifest + אייקונים להתקנה באנדרואיד, וטיוטות ראשוניות של 4 מסמכי docs/legal (עברית, עם placeholders).
+הצעד הבא (אם יתבקש): (1) להשלים את ה-placeholders במסמכים המשפטיים מול המשתמש (פרטי עסק, רכז נגישות וכו'), (2) לשקול קישור המסמכים מתוך footer האתר, (3) לשקול תרגום המסמכים לאנגלית בהתאם למבנה הדו-לשוני.
