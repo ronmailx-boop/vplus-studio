@@ -23,7 +23,8 @@
   - `<link rel="manifest">`, `theme-color`, ו-favicon ב-`index.html`.
 - [x] מסמכים משפטיים (`docs/legal/`) - נוצרו כטיוטות ראשוניות עם placeholders: privacy-policy, terms-of-service, cookie-policy, accessibility-statement (עברית פורמלית).
 - [ ] השלמת ה-placeholders במסמכים המשפטיים (שם עסק, מספר עוסק/ח.פ., כתובת, רכז נגישות וכו') ואישורם - **ממתין** לרישום עוסק פטור (ראה Decisions).
-- [ ] קישור מסמכי docs/legal מתוך footer האתר (אם יתבקש), כולל גרסה מתורגמת לאנגלית בהתאם למבנה הדו-לשוני.
+- [x] תרגום מסמכי docs/legal לאנגלית - נוצרו תחת `docs/legal/en/` (אותם שמות קבצים, תוכן זהה במבנה, placeholders תואמים).
+- [ ] קישור מסמכי docs/legal (עברית + אנגלית) מתוך footer האתר, אם יתבקש.
 - [ ] בדיקת התאמה סופית מול דרישות Google Play Organization Verification.
 
 ## Files Changed
@@ -33,6 +34,7 @@
 - `icons/icon-192.png`, `icons/icon-512.png`, `icons/icon-maskable-192.png`, `icons/icon-maskable-512.png` - אייקוני PNG מוכנים ל-PWA/Android.
 - `manifest.json` - Web App Manifest להתקנת האתר כאפליקציה.
 - `docs/legal/privacy-policy.md`, `docs/legal/terms-of-service.md`, `docs/legal/cookie-policy.md`, `docs/legal/accessibility-statement.md` - טיוטות מסמכים משפטיים בעברית פורמלית, עם placeholders להשלמה.
+- `docs/legal/en/*.md` - תרגום אנגלי מלא לכל 4 המסמכים הנ"ל (אותו מבנה ו-placeholders).
 - `PROJECT_STATE.md` - קובץ זיכרון והמשכיות.
 
 ## Decisions
@@ -46,5 +48,5 @@
 - **סטטוס עסקי:** נכון להיום אין ח.פ/עוסק רשום. המשתמש בכוונתו להירשם כ**עוסק פטור** בהמשך. עד אז, ה-placeholder של "מספר עוסק/ח.פ." במסמכים המשפטיים נשאר ריק במכוון. כמו כן, בהתאם לכך ייתכן שיש לפתוח את חשבון המפתח ב-Google Play Console כ-"Individual" ולא כ-"Organization" עד להשלמת הרישום (חשבון Organization דורש אימות מול גוף עסקי רשום).
 
 ## Current Focus
-הושלם: index.html מלא, לוגו מותג, דו-לשוניות (אנגלית כברירת מחדל + מתג עברית), PWA manifest + אייקונים להתקנה באנדרואיד, וטיוטות ראשוניות של 4 מסמכי docs/legal (עברית, עם placeholders).
-הצעד הבא (אם יתבקש): (1) להשלים את ה-placeholders במסמכים המשפטיים מול המשתמש (פרטי עסק, רכז נגישות וכו'), (2) לשקול קישור המסמכים מתוך footer האתר, (3) לשקול תרגום המסמכים לאנגלית בהתאם למבנה הדו-לשוני.
+הושלם: index.html מלא, לוגו מותג, דו-לשוניות (אנגלית כברירת מחדל + מתג עברית), PWA manifest + אייקונים להתקנה באנדרואיד, וטיוטות של 4 מסמכי docs/legal בעברית ובאנגלית (`docs/legal/` ו-`docs/legal/en/`), עם placeholders.
+הצעד הבא (אם יתבקש): (1) להשלים את ה-placeholders במסמכים המשפטיים מול המשתמש לאחר רישום כעוסק פטור, (2) לשקול קישור המסמכים מתוך footer האתר (עם קישור מתאים לפי השפה הנבחרת).
