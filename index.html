@@ -329,7 +329,9 @@
   .email-link {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
+    max-width: 100%;
     padding: 14px 28px;
     border-radius: 999px;
     background: linear-gradient(135deg, var(--accent-teal), #0a6f66);
@@ -337,8 +339,10 @@
     font-weight: 700;
     font-size: 1rem;
     text-decoration: none;
+    text-align: center;
     direction: ltr;
     unicode-bidi: isolate;
+    overflow-wrap: anywhere;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
   }
 
@@ -388,6 +392,15 @@
 
     .contact-card {
       padding: 36px 22px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .header-inner {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 16px;
     }
   }
 </style>
