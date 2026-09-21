@@ -1,0 +1,15 @@
+<svg viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5eead4"/>
+      <stop offset="100%" stop-color="#0d9488"/>
+    </linearGradient>
+    <linearGradient id="sGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c4ddb"/>
+      <stop offset="100%" stop-color="#7367f0"/>
+    </linearGradient>
+  </defs>
+  <text x="30" y="190" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-weight="800">
+    <tspan font-size="150" fill="url(#vGrad)">V</tspan><tspan font-size="150" fill="#f5f4fb">plu</tspan><tspan font-size="188" fill="url(#sGrad)">S</tspan><tspan font-size="150" fill="#f5f4fb">tudio</tspan>
+  </text>
+</svg>

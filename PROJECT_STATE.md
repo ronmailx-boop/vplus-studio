@@ -37,6 +37,7 @@
 - `docs/legal/en/*.md` - תרגום אנגלי מלא לכל 4 המסמכים הנ"ל (אותו מבנה ו-placeholders).
 - `docs/legal/*.html`, `docs/legal/en/*.html` - עמודי HTML מעוצבים (Dark Theme, RTL/LTR) שנוצרו מתוך ה-Markdown, עם קישור חזרה לעמוד הבית.
 - `assets/legal.css` - עיצוב משותף לעמודי המסמכים המשפטיים.
+- `assets/vplus-studio-wordmark-light.svg`, `assets/vplus-studio-wordmark-dark.svg` - שתי גרסאות של לוגו ה-Wordmark: light (טקסט כהה, לרקע בהיר - זהה ל-`assets/logo.svg`) ו-dark (טקסט לבן, לרקע כהה - מתאים לשימוש ישיר בהדר האתר הכהה בלי badge).
 - `PROJECT_STATE.md` - קובץ זיכרון והמשכיות.
 
 ## Decisions
