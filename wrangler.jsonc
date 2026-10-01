@@ -1,0 +1,14 @@
+// Cloudflare Workers: serves the landing page as static assets (no Worker script).
+// Deployed by .github/workflows/deploy-cloudflare.yml; GitHub Pages stays as a parallel host.
+{
+  "name": "vplus-studio",
+  "compatibility_date": "2026-10-01",
+  "assets": { "directory": "." },
+  // Keep vplus-studio.ronmailx.workers.dev alive; wrangler turns it off when routes are set unless this is explicit.
+  "workers_dev": true,
+  // The studio site lives on the root domain (apps get subdomains); DNS and certificates are created on deploy.
+  "routes": [
+    { "pattern": "vplusstudio.app", "custom_domain": true },
+    { "pattern": "www.vplusstudio.app", "custom_domain": true }
+  ]
+}

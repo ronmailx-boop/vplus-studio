@@ -3,7 +3,7 @@
 ## Overview
 דף נחיתה (Landing Page) עבור Vplus Studio - סטודיו פיתוח אפליקציות מובייל.
 המטרה: עמידה בדרישות אימות "Organization" של Google Play, מתארח ב-GitHub Pages.
-כתובת האתר: https://ronmailx-boop.github.io/vplus-studio/
+כתובת האתר: https://vplusstudio.app (+ www) דרך Cloudflare Workers; גם https://vplus-studio.ronmailx.workers.dev. GitHub Pages נשאר במקביל: https://ronmailx-boop.github.io/vplus-studio/
 
 ## Tasks
 - [x] יצירת `index.html` - עמוד נחיתה עצמאי (HTML + CSS מוטמע), עיצוב כהה (Dark Theme), Mobile-First.
@@ -25,6 +25,9 @@
 - [ ] השלמת ה-placeholders במסמכים המשפטיים (שם עסק, מספר עוסק/ח.פ., כתובת, רכז נגישות וכו') ואישורם - **ממתין** לרישום עוסק פטור (ראה Decisions).
 - [x] תרגום מסמכי docs/legal לאנגלית - נוצרו תחת `docs/legal/en/` (אותם שמות קבצים, תוכן זהה במבנה, placeholders תואמים).
 - [x] קישור מסמכי docs/legal (עברית + אנגלית) מתוך footer האתר - נוצרו עמודי HTML מעוצבים (`assets/legal.css`) לכל מסמך, וה-footer מקשר לגרסה המתאימה לפי השפה הנבחרת (מתעדכן דינמית עם מתג השפה).
+- [x] פריסה ל-Cloudflare Workers בדומיין הראשי `vplusstudio.app` + `www` (לפי הסעיף ב-CLAUDE.md): `wrangler.jsonc`, `.assetsignore` (כולל `*.md`), `.github/workflows/deploy-cloudflare.yml`.
+- [ ] המשתמש: ליצור API Token `vplus-studio-deploy` (Edit Cloudflare Workers, Specific zone vplusstudio.app) ולהוסיף כ-Secret `CLOUDFLARE_API_TOKEN`, ואז לאמת בלוג ובטלפון.
+- [ ] לעדכן את כתובת האתר ב-Google Play Console ל-https://vplusstudio.app (אחרי שעובד).
 - [ ] בדיקת התאמה סופית מול דרישות Google Play Organization Verification.
 
 ## Files Changed
