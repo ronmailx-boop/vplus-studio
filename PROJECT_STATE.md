@@ -27,7 +27,7 @@
 - [x] קישור מסמכי docs/legal (עברית + אנגלית) מתוך footer האתר - נוצרו עמודי HTML מעוצבים (`assets/legal.css`) לכל מסמך, וה-footer מקשר לגרסה המתאימה לפי השפה הנבחרת (מתעדכן דינמית עם מתג השפה).
 - [x] פריסה ל-Cloudflare Workers בדומיין הראשי `vplusstudio.app` + `www` (לפי הסעיף ב-CLAUDE.md): `wrangler.jsonc`, `.assetsignore` (כולל `*.md`), `.github/workflows/deploy-cloudflare.yml`.
 - [x] API Token `vplus-studio-deploy` (Edit Cloudflare Workers, Specific zone vplusstudio.app) נוסף כ-Secret `CLOUDFLARE_API_TOKEN`. פריסה ראשונה הצליחה 1.10.2026 (run 36843268330): בלוג `vplus-studio.ronmailx.workers.dev`, `vplusstudio.app` ו-`www.vplusstudio.app` (custom domain). מפתח עם Specific zone מספיק גם לדומיין הראשי.
-- [ ] בדיקה בטלפון של שלוש הכתובות.
+- [x] בדיקה בטלפון של שלוש הכתובות — עובדות (1.10.2026).
 - [ ] לעדכן את כתובת האתר ב-Google Play Console ל-https://vplusstudio.app (אחרי שעובד).
 - [ ] בדיקת התאמה סופית מול דרישות Google Play Organization Verification.
 
