@@ -32,6 +32,7 @@
   - הרשימה בקובץ אחד: `assets/demos.json` (שם, סוג עסק, תיאור en/he, קישור, קישור ללוח, תמונה, תגיות). **דמו חדש = עוד רשומה בקובץ.** הכרטיסים נבנים ב-`assets/demos.js` (textContent בלבד), עיצוב ב-`assets/demos.css`.
   - בתפריט של `demos.html` יש קישור "Home / דף הבית" חזרה לדף הבית (בנוסף ללוגו).
   - הדמו הראשון: folio1 (סטודיו אור) – https://folio1.vplusstudio.app, הריפו `ronmailx-boop/folio1`.
+  - הדמו השני: folio2 (נוגה – קליניקה לקוסמטיקה) – https://folio2.vplusstudio.app, הריפו `ronmailx-boop/folio2` (9.10.2026).
 - [ ] לעדכן את כתובת האתר ב-Google Play Console ל-https://vplusstudio.app (אחרי שעובד).
 - [ ] בדיקת התאמה סופית מול דרישות Google Play Organization Verification.
 

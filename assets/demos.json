@@ -1,8 +1,14 @@
 [
   {
     "id": "folio1",
-    "name": { "en": "Studio Or", "he": "סטודיו אור" },
-    "category": { "en": "Photography & Design", "he": "צילום ועיצוב" },
+    "name": {
+      "en": "Studio Or",
+      "he": "סטודיו אור"
+    },
+    "category": {
+      "en": "Photography & Design",
+      "he": "צילום ועיצוב"
+    },
     "description": {
       "en": "A business website for a photography studio: gallery with lightbox, services with prices, contact form and a Hebrew admin panel the owner runs alone.",
       "he": "אתר תדמית לסטודיו צילום: גלריה עם תצוגה מוגדלת, שירותים עם מחירים, טופס יצירת קשר ולוח ניהול בעברית שבעל העסק מפעיל לבד."
@@ -10,11 +16,59 @@
     "url": "https://folio1.vplusstudio.app/",
     "adminUrl": "https://folio1.vplusstudio.app/admin/",
     "image": "https://images.pexels.com/photos/10040315/pexels-photo-10040315.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    "imageAlt": { "en": "Portrait with a neon ring light, from the Studio Or demo", "he": "פורטרט עם טבעת אור ניאון, מתוך אתר הדמו של סטודיו אור" },
+    "imageAlt": {
+      "en": "Portrait with a neon ring light, from the Studio Or demo",
+      "he": "פורטרט עם טבעת אור ניאון, מתוך אתר הדמו של סטודיו אור"
+    },
     "tags": [
-      { "en": "Admin panel", "he": "לוח ניהול" },
-      { "en": "Mobile-first", "he": "מותאם לנייד" },
-      { "en": "Hebrew RTL", "he": "עברית" }
+      {
+        "en": "Admin panel",
+        "he": "לוח ניהול"
+      },
+      {
+        "en": "Mobile-first",
+        "he": "מותאם לנייד"
+      },
+      {
+        "en": "Hebrew RTL",
+        "he": "עברית"
+      }
+    ]
+  },
+  {
+    "id": "folio2",
+    "name": {
+      "en": "Noga Clinic",
+      "he": "נוגה – קליניקה לקוסמטיקה"
+    },
+    "category": {
+      "en": "Beauty & Cosmetics",
+      "he": "קוסמטיקה וטיפוח"
+    },
+    "description": {
+      "en": "A website for a beauty clinic: treatments with prices, gallery, appointment requests and a Hebrew admin panel the owner runs alone.",
+      "he": "אתר לקליניקת יופי: טיפולים עם מחירים, גלריה, בקשות לקביעת תור ולוח ניהול בעברית שבעלת העסק מפעילה לבד."
+    },
+    "url": "https://folio2.vplusstudio.app/",
+    "adminUrl": "https://folio2.vplusstudio.app/admin/",
+    "image": "https://images.pexels.com/photos/3738349/pexels-photo-3738349.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": {
+      "en": "Woman during a facial treatment, from the Noga Clinic demo",
+      "he": "אישה בטיפול פנים, מתוך אתר הדמו של קליניקת נוגה"
+    },
+    "tags": [
+      {
+        "en": "Admin panel",
+        "he": "לוח ניהול"
+      },
+      {
+        "en": "Appointments",
+        "he": "קביעת תורים"
+      },
+      {
+        "en": "Hebrew RTL",
+        "he": "עברית"
+      }
     ]
   }
 ]
