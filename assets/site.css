@@ -73,6 +73,12 @@ nav {
   gap: 12px;
 }
 
+/* The header row is always LTR (logo on the left), but in Hebrew the nav items
+   read right-to-left: the first link (Home) sits on the right. */
+html[dir="rtl"] nav {
+  direction: rtl;
+}
+
 nav a.nav-cta {
   display: inline-block;
   padding: 7px 16px;
