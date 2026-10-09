@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Demos | Vplus Studio</title>
+<meta name="description" content="Live demos of the business websites Vplus Studio builds: ready-made sites with an admin panel the owner runs alone.">
+<meta property="og:title" content="Website Demos | Vplus Studio">
+<meta property="og:description" content="Live demos of business websites with an admin panel the owner runs alone.">
+<meta property="og:type" content="website">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1E1B3A">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/demos.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <img class="logo-img" src="assets/vplus-studio-wordmark-dark.svg" alt="Vplus Studio">
+      </a>
+      <nav>
+        <button type="button" class="lang-toggle" id="langToggle" onclick="toggleLang()">He</button>
+        <a class="nav-link" data-i18n="navDemos" href="demos.html" aria-current="page">Demos</a>
+        <a class="nav-cta" data-i18n="navCta" href="mailto:vplus.studio.apps@gmail.com">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow" data-i18n="heroEyebrow">Website Demos</span>
+        <h1><span data-i18n="heroTitleStart">Websites Your Business</span> <span class="highlight" data-i18n="heroTitleHighlight">Runs Alone</span></h1>
+        <p data-i18n="heroText">
+          Every demo is a real, working website with its own admin panel. Open it, log in with the demo details
+          shown on the login page, change a headline and watch the site update.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" data-i18n="heroPrimaryBtn" href="#list">Browse the demos</a>
+          <a class="btn btn-secondary" data-i18n="heroSecondaryBtn" href="mailto:vplus.studio.apps@gmail.com">I want a site like this</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="list">
+      <div class="demos-grid" data-demos></div>
+    </section>
+
+    <section id="how">
+      <div class="section-header">
+        <span class="tag" data-i18n="howTag">How It Works</span>
+        <h2 data-i18n="howTitle">From Demo to Your Own Website</h2>
+      </div>
+      <div class="steps-grid">
+        <div class="feature-card">
+          <span class="step-num">1</span>
+          <h3 data-i18n="step1Title">Pick a demo</h3>
+          <p data-i18n="step1Text">Choose the demo closest to your business and try its admin panel.</p>
+        </div>
+        <div class="feature-card">
+          <span class="step-num">2</span>
+          <h3 data-i18n="step2Title">We tailor it</h3>
+          <p data-i18n="step2Text">Your texts, photos, colors and logo, on your own domain.</p>
+        </div>
+        <div class="feature-card">
+          <span class="step-num">3</span>
+          <h3 data-i18n="step3Title">You run it</h3>
+          <p data-i18n="step3Text">Update texts, gallery and services from your phone, with no code.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-card">
+        <h2 data-i18n="contactTitle">Want a website like this?</h2>
+        <p data-i18n="contactText">Tell us about your business and we'll get back to you with a tailored offer.</p>
+        <a class="email-link" href="mailto:vplus.studio.apps@gmail.com">
+          ✉️ vplus.studio.apps@gmail.com
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div data-i18n="footerText">© 2026 Vplus Studio. All rights reserved.</div>
+    <div class="footer-links">
+      <a data-i18n="footerPrivacy" data-href-en="docs/legal/en/privacy-policy.html" data-href-he="docs/legal/privacy-policy.html" href="docs/legal/en/privacy-policy.html">Privacy Policy</a>
+      <a data-i18n="footerTerms" data-href-en="docs/legal/en/terms-of-service.html" data-href-he="docs/legal/terms-of-service.html" href="docs/legal/en/terms-of-service.html">Terms of Service</a>
+      <a data-i18n="footerCookies" data-href-en="docs/legal/en/cookie-policy.html" data-href-he="docs/legal/cookie-policy.html" href="docs/legal/en/cookie-policy.html">Cookie Policy</a>
+      <a data-i18n="footerAccessibility" data-href-en="docs/legal/en/accessibility-statement.html" data-href-he="docs/legal/accessibility-statement.html" href="docs/legal/en/accessibility-statement.html">Accessibility Statement</a>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var translations = {
+        en: {
+          pageTitle: "Website Demos | Vplus Studio",
+          navDemos: "Demos",
+          navCta: "Contact",
+          heroEyebrow: "Website Demos",
+          heroTitleStart: "Websites Your Business",
+          heroTitleHighlight: "Runs Alone",
+          heroText: "Every demo is a real, working website with its own admin panel. Open it, log in with the demo details shown on the login page, change a headline and watch the site update.",
+          heroPrimaryBtn: "Browse the demos",
+          heroSecondaryBtn: "I want a site like this",
+          howTag: "How It Works",
+          howTitle: "From Demo to Your Own Website",
+          step1Title: "Pick a demo",
+          step1Text: "Choose the demo closest to your business and try its admin panel.",
+          step2Title: "We tailor it",
+          step2Text: "Your texts, photos, colors and logo, on your own domain.",
+          step3Title: "You run it",
+          step3Text: "Update texts, gallery and services from your phone, with no code.",
+          contactTitle: "Want a website like this?",
+          contactText: "Tell us about your business and we'll get back to you with a tailored offer.",
+          footerText: "© 2026 Vplus Studio. All rights reserved.",
+          footerPrivacy: "Privacy Policy",
+          footerTerms: "Terms of Service",
+          footerCookies: "Cookie Policy",
+          footerAccessibility: "Accessibility Statement",
+          langToggleLabel: "He"
+        },
+        he: {
+          pageTitle: "אתרי דמו | Vplus Studio",
+          navDemos: "אתרי דמו",
+          navCta: "צור קשר",
+          heroEyebrow: "אתרי דמו",
+          heroTitleStart: "אתרים שהעסק שלכם",
+          heroTitleHighlight: "מנהל לבד",
+          heroText: "כל דמו הוא אתר אמיתי שעובד, עם לוח ניהול משלו. פתחו אותו, היכנסו עם פרטי הדמו שמופיעים בדף הכניסה, שנו כותרת וראו את האתר מתעדכן.",
+          heroPrimaryBtn: "לאתרי הדמו",
+          heroSecondaryBtn: "אני רוצה אתר כזה",
+          howTag: "איך זה עובד",
+          howTitle: "מדמו לאתר משלכם",
+          step1Title: "בוחרים דמו",
+          step1Text: "בוחרים את הדמו הכי קרוב לעסק שלכם ומנסים את לוח הניהול.",
+          step2Title: "אנחנו מתאימים",
+          step2Text: "הטקסטים, התמונות, הצבעים והלוגו שלכם, בדומיין משלכם.",
+          step3Title: "אתם מנהלים",
+          step3Text: "מעדכנים טקסטים, גלריה ושירותים מהטלפון, בלי קוד.",
+          contactTitle: "רוצים אתר כזה?",
+          contactText: "ספרו לנו על העסק שלכם, ונחזור אליכם עם הצעה מותאמת.",
+          footerText: "© 2026 Vplus Studio. All rights reserved.",
+          footerPrivacy: "מדיניות פרטיות",
+          footerTerms: "תנאי שימוש",
+          footerCookies: "מדיניות עוגיות",
+          footerAccessibility: "הצהרת נגישות",
+          langToggleLabel: "En"
+        }
+      };
+
+      function applyLang(lang) {
+        var dict = translations[lang] || translations.en;
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === "he" ? "rtl" : "ltr";
+        document.documentElement.setAttribute("data-current-lang", lang);
+        document.title = dict.pageTitle;
+
+        document.querySelectorAll("[data-i18n]").forEach(function (el) {
+          var key = el.getAttribute("data-i18n");
+          if (dict[key] !== undefined) {
+            el.textContent = dict[key];
+          }
+        });
+
+        document.querySelectorAll("[data-href-en][data-href-he]").forEach(function (el) {
+          el.setAttribute("href", el.getAttribute(lang === "he" ? "data-href-he" : "data-href-en"));
+        });
+
+        var toggleBtn = document.getElementById("langToggle");
+        if (toggleBtn) {
+          toggleBtn.textContent = dict.langToggleLabel;
+        }
+
+        try {
+          localStorage.setItem("vplus-lang", lang);
+        } catch (e) {}
+
+        document.dispatchEvent(new CustomEvent("vplus:langchange", { detail: lang }));
+      }
+
+      function getInitialLang() {
+        try {
+          var saved = localStorage.getItem("vplus-lang");
+          if (saved === "en" || saved === "he") return saved;
+        } catch (e) {}
+        return "en";
+      }
+
+      window.toggleLang = function () {
+        var current = document.documentElement.getAttribute("data-current-lang") || "en";
+        applyLang(current === "en" ? "he" : "en");
+      };
+
+      applyLang(getInitialLang());
+    })();
+  </script>
+  <script src="assets/demos.js"></script>
+
+</body>
+</html>

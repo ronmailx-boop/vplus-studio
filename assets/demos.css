@@ -1,0 +1,131 @@
+/* Demo site cards, shared by index.html (teaser) and demos.html (full list). */
+
+.demos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 440px));
+  justify-content: center;
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.demo-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.demo-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(124, 77, 219, 0.45);
+}
+
+.demo-media {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 10;
+  background: linear-gradient(135deg, rgba(124, 77, 219, 0.45), rgba(13, 148, 136, 0.3)), #15132b;
+  overflow: hidden;
+}
+
+.demo-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.demo-card:hover .demo-media img {
+  transform: scale(1.04);
+}
+
+.demo-badge {
+  position: absolute;
+  top: 14px;
+  inset-inline-start: 14px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(30, 27, 58, 0.85);
+  border: 1px solid rgba(94, 234, 212, 0.35);
+  color: var(--accent-teal-light);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.demo-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 22px 22px 24px;
+  flex: 1;
+}
+
+.demo-category {
+  color: var(--accent-teal-light);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.demo-card h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.demo-card p {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+}
+
+.demo-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+}
+
+.demo-tags li {
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+}
+
+.demo-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.demo-actions .btn {
+  padding: 11px 20px;
+  font-size: 0.88rem;
+  text-align: center;
+  flex: 1 1 170px;
+  white-space: nowrap;
+}
+
+.demo-note {
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+}
+
+.demos-status {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: 24px 0;
+}
+
+.demos-more {
+  text-align: center;
+  margin-top: 36px;
+}

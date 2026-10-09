@@ -28,6 +28,9 @@
 - [x] פריסה ל-Cloudflare Workers בדומיין הראשי `vplusstudio.app` + `www` (לפי הסעיף ב-CLAUDE.md): `wrangler.jsonc`, `.assetsignore` (כולל `*.md`), `.github/workflows/deploy-cloudflare.yml`.
 - [x] API Token `vplus-studio-deploy` (Edit Cloudflare Workers, Specific zone vplusstudio.app) נוסף כ-Secret `CLOUDFLARE_API_TOKEN`. פריסה ראשונה הצליחה 1.10.2026 (run 36843268330): בלוג `vplus-studio.ronmailx.workers.dev`, `vplusstudio.app` ו-`www.vplusstudio.app` (custom domain). מפתח עם Specific zone מספיק גם לדומיין הראשי.
 - [x] בדיקה בטלפון של שלוש הכתובות — עובדות (1.10.2026).
+- [x] דף אתרי דמו `demos.html` (נגיש גם ב-`/demos`): דו-לשוני, אותו עיצוב, כרטיס לכל אתר דמו עם "צפה באתר" ו-"נסה את לוח הניהול", אזור "איך זה עובד" ו-CTA למייל. בדף הבית: קישור "Demos / אתרי דמו" בתפריט ואזור "אתרי דמו" עם 2 הכרטיסים הראשונים + כפתור לכל הדמואים (9.10.2026).
+  - הרשימה בקובץ אחד: `assets/demos.json` (שם, סוג עסק, תיאור en/he, קישור, קישור ללוח, תמונה, תגיות). **דמו חדש = עוד רשומה בקובץ.** הכרטיסים נבנים ב-`assets/demos.js` (textContent בלבד), עיצוב ב-`assets/demos.css`.
+  - הדמו הראשון: folio1 (סטודיו אור) – https://folio1.vplusstudio.app, הריפו `ronmailx-boop/folio1`.
 - [ ] לעדכן את כתובת האתר ב-Google Play Console ל-https://vplusstudio.app (אחרי שעובד).
 - [ ] בדיקת התאמה סופית מול דרישות Google Play Organization Verification.
 
@@ -42,6 +45,9 @@
 - `docs/legal/*.html`, `docs/legal/en/*.html` - עמודי HTML מעוצבים (Dark Theme, RTL/LTR) שנוצרו מתוך ה-Markdown, עם קישור חזרה לעמוד הבית.
 - `assets/legal.css` - עיצוב משותף לעמודי המסמכים המשפטיים.
 - `assets/vplus-studio-wordmark-light.svg`, `assets/vplus-studio-wordmark-dark.svg` - שתי גרסאות של לוגו ה-Wordmark: light (טקסט כהה, לרקע בהיר - זהה ל-`assets/logo.svg`) ו-dark (טקסט לבן, לרקע כהה - מתאים לשימוש ישיר בהדר האתר הכהה בלי badge).
+- `assets/site.css` - העיצוב המשותף (הועבר כמו שהוא מה-`<style>` שהיה בתוך `index.html`), משמש את `index.html` ואת `demos.html`.
+- `demos.html` - דף אתרי הדמו.
+- `assets/demos.json`, `assets/demos.js`, `assets/demos.css` - רשימת הדמואים, רינדור הכרטיסים ועיצובם.
 - `PROJECT_STATE.md` - קובץ זיכרון והמשכיות.
 
 ## Decisions
@@ -57,5 +63,7 @@
 - **סטטוס עסקי:** נכון להיום אין ח.פ/עוסק רשום. המשתמש בכוונתו להירשם כ**עוסק פטור** בהמשך. עד אז, ה-placeholder של "מספר עוסק/ח.פ." במסמכים המשפטיים נשאר ריק במכוון. כמו כן, בהתאם לכך ייתכן שיש לפתוח את חשבון המפתח ב-Google Play Console כ-"Individual" ולא כ-"Organization" עד להשלמת הרישום (חשבון Organization דורש אימות מול גוף עסקי רשום).
 
 ## Current Focus
+**עדכון 9.10.2026:** נוסף דף אתרי הדמו (`demos.html`) ואזור דמואים בדף הבית. להוספת דמו: רשומה חדשה ב-`assets/demos.json`.
+
 הושלם: index.html מלא, לוגו מותג, דו-לשוניות (אנגלית כברירת מחדל + מתג עברית), PWA manifest + אייקונים להתקנה באנדרואיד, 4 מסמכי docs/legal בעברית ובאנגלית עם placeholders, עמודי HTML מעוצבים לכל מסמך, וקישורי footer דו-לשוניים אליהם.
 הצעד הבא (אם יתבקש): להשלים את ה-placeholders במסמכים המשפטיים (עברית + אנגלית, וכן ה-.md וה-.html המתאימים) מול המשתמש לאחר רישום כעוסק פטור.
