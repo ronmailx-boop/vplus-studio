@@ -1,0 +1,20 @@
+[
+  {
+    "id": "folio1",
+    "name": { "en": "Studio Or", "he": "סטודיו אור" },
+    "category": { "en": "Photography & Design", "he": "צילום ועיצוב" },
+    "description": {
+      "en": "A business website for a photography studio: gallery with lightbox, services with prices, contact form and a Hebrew admin panel the owner runs alone.",
+      "he": "אתר תדמית לסטודיו צילום: גלריה עם תצוגה מוגדלת, שירותים עם מחירים, טופס יצירת קשר ולוח ניהול בעברית שבעל העסק מפעיל לבד."
+    },
+    "url": "https://folio1.vplusstudio.app/",
+    "adminUrl": "https://folio1.vplusstudio.app/admin/",
+    "image": "https://images.pexels.com/photos/10040315/pexels-photo-10040315.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "imageAlt": { "en": "Portrait with a neon ring light, from the Studio Or demo", "he": "פורטרט עם טבעת אור ניאון, מתוך אתר הדמו של סטודיו אור" },
+    "tags": [
+      { "en": "Admin panel", "he": "לוח ניהול" },
+      { "en": "Mobile-first", "he": "מותאם לנייד" },
+      { "en": "Hebrew RTL", "he": "עברית" }
+    ]
+  }
+]
