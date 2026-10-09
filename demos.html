@@ -21,11 +21,12 @@
 
   <header>
     <div class="header-inner">
-      <a class="logo" href="index.html">
+      <a class="logo" href="index.html" aria-label="Vplus Studio – Home">
         <img class="logo-img" src="assets/vplus-studio-wordmark-dark.svg" alt="Vplus Studio">
       </a>
       <nav>
         <button type="button" class="lang-toggle" id="langToggle" onclick="toggleLang()">He</button>
+        <a class="nav-link" data-i18n="navHome" href="index.html">Home</a>
         <a class="nav-link" data-i18n="navDemos" href="demos.html" aria-current="page">Demos</a>
         <a class="nav-cta" data-i18n="navCta" href="mailto:vplus.studio.apps@gmail.com">Contact</a>
       </nav>
@@ -102,6 +103,7 @@
       var translations = {
         en: {
           pageTitle: "Website Demos | Vplus Studio",
+          navHome: "Home",
           navDemos: "Demos",
           navCta: "Contact",
           heroEyebrow: "Website Demos",
@@ -129,6 +131,7 @@
         },
         he: {
           pageTitle: "אתרי דמו | Vplus Studio",
+          navHome: "דף הבית",
           navDemos: "אתרי דמו",
           navCta: "צור קשר",
           heroEyebrow: "אתרי דמו",
