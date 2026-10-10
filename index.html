@@ -12,7 +12,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
-<link rel="stylesheet" href="assets/demos.css">
 </head>
 <body>
 
@@ -22,9 +21,7 @@
         <img class="logo-img" src="assets/vplus-studio-wordmark-dark.svg" alt="Vplus Studio">
       </div>
       <nav>
-        <a class="nav-link" data-i18n="navHome" href="index.html" aria-current="page">Home</a>
         <button type="button" class="lang-toggle" id="langToggle" onclick="toggleLang()">He</button>
-        <a class="nav-link" data-i18n="navDemos" href="demos.html">Demos</a>
         <a class="nav-cta" data-i18n="navCta" href="mailto:vplus.studio.apps@gmail.com">Contact</a>
       </nav>
     </div>
@@ -71,18 +68,6 @@
       </div>
     </section>
 
-    <section id="demos">
-      <div class="section-header">
-        <span class="tag" data-i18n="demosTag">Website Demos</span>
-        <h2 data-i18n="demosTitle">Websites We Build for Businesses</h2>
-        <p data-i18n="demosText">Ready-made business websites with an admin panel the owner runs alone. Open a live demo and try it yourself.</p>
-      </div>
-      <div class="demos-grid" data-demos data-demos-limit="2"></div>
-      <div class="demos-more">
-        <a class="btn btn-secondary" data-i18n="demosAllBtn" href="demos.html">See all demos</a>
-      </div>
-    </section>
-
     <section class="contact" id="contact">
       <div class="contact-card">
         <h2 data-i18n="contactTitle">Have a question or inquiry?</h2>
@@ -108,7 +93,6 @@
     (function () {
       var translations = {
         en: {
-          navHome: "Home",
           navCta: "Contact",
           heroEyebrow: "Vplus Studio",
           heroTitleStart: "Building Smart",
@@ -132,15 +116,9 @@
           footerTerms: "Terms of Service",
           footerCookies: "Cookie Policy",
           footerAccessibility: "Accessibility Statement",
-          navDemos: "Demos",
-          demosTag: "Website Demos",
-          demosTitle: "Websites We Build for Businesses",
-          demosText: "Ready-made business websites with an admin panel the owner runs alone. Open a live demo and try it yourself.",
-          demosAllBtn: "See all demos",
           langToggleLabel: "He"
         },
         he: {
-          navHome: "דף הבית",
           navCta: "צור קשר",
           heroEyebrow: "Vplus Studio",
           heroTitleStart: "בונים חוויות",
@@ -164,11 +142,6 @@
           footerTerms: "תנאי שימוש",
           footerCookies: "מדיניות עוגיות",
           footerAccessibility: "הצהרת נגישות",
-          navDemos: "אתרי דמו",
-          demosTag: "אתרי דמו",
-          demosTitle: "אתרים שאנחנו בונים לעסקים",
-          demosText: "אתרי תדמית מוכנים עם לוח ניהול שבעל העסק מפעיל לבד. פתחו דמו חי ונסו בעצמכם.",
-          demosAllBtn: "לכל אתרי הדמו",
           langToggleLabel: "En"
         }
       };
@@ -198,9 +171,6 @@
         try {
           localStorage.setItem("vplus-lang", lang);
         } catch (e) {}
-
-        // Lets assets/demos.js re-render the demo cards in the new language
-        document.dispatchEvent(new CustomEvent("vplus:langchange", { detail: lang }));
       }
 
       function getInitialLang() {
@@ -219,7 +189,6 @@
       applyLang(getInitialLang());
     })();
   </script>
-  <script src="assets/demos.js"></script>
 
 </body>
 </html>
