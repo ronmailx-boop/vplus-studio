@@ -1,10 +1,10 @@
 # Cookie Policy - Vplus Studio
 
-**Last updated:** [PLACEHOLDER: DD/MM/YYYY]
+**Last updated:** 10/10/2026
 
 ## 1. General
 
-This document explains how Vplus Studio ("**we**") uses cookies and similar local storage technologies on the website [PLACEHOLDER: website URL] (the "**Website**").
+This document explains how Vplus Studio ("**we**") uses cookies and similar local storage technologies on the website [vplusstudio.app](https://vplusstudio.app) (the "**Website**").
 
 ## 2. What Is a Cookie?
 
@@ -25,7 +25,7 @@ This information:
 
 The Website uses fonts loaded from Google Fonts. Loading these fonts may cause your IP address to be transmitted to Google's servers in order to serve the font. Google may set cookies as part of this service in accordance with its own privacy policy. For more information, please refer to Google's privacy policy.
 
-[PLACEHOLDER: this section should be updated if analytics tools (such as Google Analytics), advertising, or social media widgets that set their own cookies are added in the future].
+As of the date of this update, no analytics, advertising, or social media tools are in use beyond what is described above. This section will be updated accordingly if such tools are added in the future.
 
 ## 5. Cookies in the Mobile Applications
 
