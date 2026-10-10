@@ -59,4 +59,4 @@
 
 לכל שאלה בנוגע לתנאי שימוש אלה, ניתן לפנות אלינו:
 
-**דוא"ל:** vplus.studio.apps@gmail.com
+**דוא"ל:** vplusstudio.app@gmail.com

@@ -59,4 +59,4 @@ These Terms shall be governed exclusively by the laws of the State of Israel, wi
 
 For any question regarding these Terms of Service, please contact us:
 
-**Email:** vplus.studio.apps@gmail.com
+**Email:** vplusstudio.app@gmail.com

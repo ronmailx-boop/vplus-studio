@@ -43,4 +43,4 @@ We may update this Policy from time to time in response to changes on the Websit
 
 For questions regarding this Cookie Policy, please contact us:
 
-**Email:** vplus.studio.apps@gmail.com
+**Email:** vplusstudio.app@gmail.com

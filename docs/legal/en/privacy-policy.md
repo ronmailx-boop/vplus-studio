@@ -17,13 +17,13 @@ The entity responsible for processing personal information is:
 - **Business/Company name:** [PLACEHOLDER: full legal name]
 - **Business ID / Company number:** [PLACEHOLDER]
 - **Address:** [PLACEHOLDER]
-- **Contact email for privacy matters:** vplus.studio.apps@gmail.com
+- **Contact email for privacy matters:** vplusstudio.app@gmail.com
 
 ## 3. What Information We Collect
 
 Depending on the specific application or service you use, we may collect the following types of information:
 
-- **Information you provide voluntarily:** name, email address, and the content of support requests sent to vplus.studio.apps@gmail.com.
+- **Information you provide voluntarily:** name, email address, and the content of support requests sent to vplusstudio.app@gmail.com.
 - **Technical information collected automatically:** device type, operating system, app version, unique device identifiers (Device ID / Advertising ID), IP address, usage data, and crash/diagnostic logs.
 - **Information stored on your device (Local Storage):** for example, saving your language preference on this website (English/Hebrew) — this information is stored locally in your browser only and is not transmitted to us.
 - **Device permissions:** to the extent a specific app of ours requests permissions (such as camera, storage, or location), this will be detailed on that app's dedicated policy page and/or in the permission request screen itself, in accordance with the data-minimization principle.
@@ -62,7 +62,7 @@ In accordance with the Privacy Protection Law and the GDPR (where applicable), y
 - The right to object to processing or to request its restriction.
 - The right to data portability (receiving your information in a machine-readable format).
 
-To exercise these rights, please contact us at: **vplus.studio.apps@gmail.com**.
+To exercise these rights, please contact us at: **vplusstudio.app@gmail.com**.
 
 ## 8. Information Security
 
@@ -80,4 +80,4 @@ We may update this Policy from time to time. Material changes will be published 
 
 For any question, request, or complaint regarding this Privacy Policy, please contact us:
 
-**Email:** vplus.studio.apps@gmail.com
+**Email:** vplusstudio.app@gmail.com

@@ -31,7 +31,7 @@ This statement relates to the Vplus Studio website. Information about the access
 We welcome inquiries, comments, and requests regarding the accessibility of the Website, and will work to address them as soon as possible.
 
 **Accessibility Coordinator:** Vplus Studio
-**Email:** vplus.studio.apps@gmail.com
+**Email:** vplusstudio.app@gmail.com
 **Phone:** [PLACEHOLDER: phone number]
 
 ## 6. Enforcement Procedures

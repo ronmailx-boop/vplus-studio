@@ -43,4 +43,4 @@
 
 לשאלות בנוגע למדיניות עוגיות זו, ניתן לפנות אלינו:
 
-**דוא"ל:** vplus.studio.apps@gmail.com
+**דוא"ל:** vplusstudio.app@gmail.com
