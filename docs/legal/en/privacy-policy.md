@@ -1,10 +1,10 @@
 # Privacy Policy - Vplus Studio
 
-**Last updated:** [PLACEHOLDER: DD/MM/YYYY]
+**Last updated:** 10/10/2026
 
 ## 1. General
 
-This Privacy Policy ("**Policy**") describes how "Vplus Studio" ("**we**", "**us**", "**the Studio**") collects, uses, stores, and protects personal information collected through the website [PLACEHOLDER: website URL] and through the applications we develop and publish on Google Play (together, the "**Services**").
+This Privacy Policy ("**Policy**") describes how "Vplus Studio" ("**we**", "**us**", "**the Studio**") collects, uses, stores, and protects personal information collected through the website [vplusstudio.app](https://vplusstudio.app) and through the applications we develop and publish on Google Play (together, the "**Services**").
 
 This Policy is written in accordance with the Israeli Privacy Protection Law, 5741-1981 and its regulations (including Amendment 13), and, where relevant to users from the European Union, in accordance with the General Data Protection Regulation (GDPR).
 
@@ -44,7 +44,7 @@ We **do not** sell personal information to third parties.
 
 ## 5. Sharing Information with Third Parties
 
-We may use external service providers (such as cloud services, analytics, or development infrastructure) to operate the Services. These providers are contractually obligated to maintain confidentiality of the information and to use it only for the purpose for which it was provided. Current list of providers: [PLACEHOLDER: e.g., Firebase / Google Analytics / Google Play Services].
+As of the date of this update, the Website does not integrate any analytics, advertising, or tracking tools, and does not share information with any third-party provider beyond the Website's basic hosting infrastructure. Should we use external service providers in the future (such as Firebase, Google Analytics, or Google Play Services), this section will be updated accordingly, and such providers will be contractually obligated to maintain confidentiality of the information and to use it only for the purpose for which it was provided.
 
 Personal information may also be disclosed when required by law, court order, or to protect our legal rights.
 
@@ -70,7 +70,7 @@ We implement reasonable, industry-standard security measures to protect personal
 
 ## 9. Children's Privacy
 
-The Services are not intended for use by children under the age of [PLACEHOLDER: 13/16] without parental or guardian consent. If we become aware that personal information has been collected from a child without such consent, we will act to delete it.
+The Services are not intended for use by children under the age of 13 without parental or guardian consent. If we become aware that personal information has been collected from a child without such consent, we will act to delete it.
 
 ## 10. Changes to This Policy
 

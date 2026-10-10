@@ -1,6 +1,6 @@
 # Accessibility Statement - Vplus Studio
 
-**Last updated:** [PLACEHOLDER: DD/MM/YYYY]
+**Last updated:** 10/10/2026
 
 ## 1. Our Commitment to Accessibility
 
@@ -20,7 +20,7 @@ Among other things, the following measures have been implemented on the Website 
 
 Despite our efforts, you may encounter accessibility difficulties in certain parts of the Website. We continue to work on an ongoing basis to identify and fix accessibility issues as they are discovered.
 
-[PLACEHOLDER: specific known limitations should be detailed here, if any, following a formal accessibility audit].
+As of the date of this statement, we are not aware of any specific accessibility limitations on the Website. This statement will be updated should any such limitations be identified, including following a formal accessibility audit.
 
 ## 4. Accessibility of the Applications
 

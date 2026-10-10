@@ -1,10 +1,10 @@
 # Terms of Service - Vplus Studio
 
-**Last updated:** [PLACEHOLDER: DD/MM/YYYY]
+**Last updated:** 10/10/2026
 
 ## 1. Introduction and Acceptance of Terms
 
-These Terms of Service ("**Terms**") govern access to and use of the website [PLACEHOLDER: website URL] and the applications developed and distributed by Vplus Studio ("**we**", "**the Studio**") on Google Play (together, the "**Services**").
+These Terms of Service ("**Terms**") govern access to and use of the website [vplusstudio.app](https://vplusstudio.app) and the applications developed and distributed by Vplus Studio ("**we**", "**the Studio**") on Google Play (together, the "**Services**").
 
 By browsing the website, downloading an app, or otherwise using any of the Services, you fully agree to these Terms. If you do not agree to these Terms, please refrain from using the Services.
 
