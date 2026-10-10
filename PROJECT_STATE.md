@@ -9,7 +9,7 @@
 - [x] יצירת `index.html` - עמוד נחיתה עצמאי (HTML + CSS מוטמע), עיצוב כהה (Dark Theme), Mobile-First.
   - Header עם שם המותג "Vplus Studio".
   - Hero Section עם כותרת טכנולוגית ותת-כותרת.
-  - Contact Section עם קישור mailto ל-vplus.studio.apps@gmail.com.
+  - Contact Section עם קישור mailto ל-vplusstudio.app@gmail.com.
   - Footer עם שורת זכויות יוצרים © 2026 Vplus Studio.
 - [x] הסרת שם פרטי (Ron Lupovich) משורת הזכויות בפוטר, לבקשת המשתמש.
 - [x] שילוב לוגו מותג (SVG שסופק ע"י המשתמש) בהדר - כיום משתמש בגרסת ה-`wordmark-dark` (טקסט לבן) ישירות על רקע ההדר הכהה, ללא badge (הוסר לאחר יצירת גרסת ה-dark).
@@ -66,6 +66,8 @@
 - **סטטוס עסקי:** נכון להיום אין ח.פ/עוסק רשום. המשתמש בכוונתו להירשם כ**עוסק פטור** בהמשך. עד אז, ה-placeholder של "מספר עוסק/ח.פ." במסמכים המשפטיים נשאר ריק במכוון. כמו כן, בהתאם לכך ייתכן שיש לפתוח את חשבון המפתח ב-Google Play Console כ-"Individual" ולא כ-"Organization" עד להשלמת הרישום (חשבון Organization דורש אימות מול גוף עסקי רשום).
 
 ## Current Focus
+**עדכון 10.10.2026 (ב):** כתובת המייל הציבורית הוחלפה מ-`vplus.studio.apps@gmail.com` ל-**`vplusstudio.app@gmail.com`** (חשבון Gmail ייעודי חדש) - עודכן בכל האתר (index.html, demos.html, כל קישורי mailto וטקסט מוצג) ובכל 8 המסמכים המשפטיים (he+en, .md וה-.html שנוצר מהם).
+
 **עדכון 10.10.2026:** לבקשת המשתמש, **הוסר אזור הדמואים וקישור "Demos" מדף הבית** (`index.html`) — חזרה למבנה הקלאסי (Hero → About → Contact → Footer, ללא אזכור דמואים). דף `demos.html` עצמו, האתרים דמו עצמם (folio1, folio2) וכל קבצי ה-`assets/demos.*` **לא נגעו בהם כלל** - דף הדמואים ממשיך להיות נגיש ישירות ב-`/demos`, רק לא מקושר/מוצג מדף הבית.
 
 **עדכון 9.10.2026:** נוסף דף אתרי הדמו (`demos.html`) ואזור דמואים בדף הבית. להוספת דמו: רשומה חדשה ב-`assets/demos.json`.
