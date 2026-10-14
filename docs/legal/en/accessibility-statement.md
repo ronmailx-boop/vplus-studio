@@ -32,7 +32,6 @@ We welcome inquiries, comments, and requests regarding the accessibility of the 
 
 **Accessibility Coordinator:** Vplus Studio
 **Email:** vplusstudio.app@gmail.com
-**Phone:** [PLACEHOLDER: phone number]
 
 ## 6. Enforcement Procedures
 

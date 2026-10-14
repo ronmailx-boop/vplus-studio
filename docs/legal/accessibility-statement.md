@@ -32,7 +32,6 @@ Vplus Studio רואה חשיבות רבה במתן שירות שוויוני, מ
 
 **רכז/ת נגישות:** Vplus Studio
 **דוא"ל:** vplusstudio.app@gmail.com
-**טלפון:** [PLACEHOLDER: מספר טלפון]
 
 ## 6. הליכי אכיפה
 
