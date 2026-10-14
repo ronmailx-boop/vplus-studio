@@ -14,9 +14,9 @@ By using the Services, you agree to the terms of this Privacy Policy. If you do 
 
 The entity responsible for processing personal information is:
 
-- **Business/Company name:** [PLACEHOLDER: full legal name]
-- **Business ID / Company number:** [PLACEHOLDER]
-- **Address:** [PLACEHOLDER]
+- **Business/Company name:** Ron Lupovich (exempt dealer / sole proprietor), trading as "Vplus Studio"
+- **Business ID:** 025487620
+- **Address:** Anilevich St. 26, Apt. 21, Holon 5851429, Israel
 - **Contact email for privacy matters:** vplusstudio.app@gmail.com
 
 ## 3. What Information We Collect

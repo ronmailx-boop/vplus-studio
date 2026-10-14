@@ -53,7 +53,7 @@ We may update, modify, or discontinue any aspect of the Services at any time. We
 
 ## 10. Governing Law and Jurisdiction
 
-These Terms shall be governed exclusively by the laws of the State of Israel, without regard to its conflict-of-laws principles. Exclusive jurisdiction over any dispute relating to the Services shall lie with the competent courts of [PLACEHOLDER: e.g., Tel Aviv-Jaffa].
+These Terms shall be governed exclusively by the laws of the State of Israel, without regard to its conflict-of-laws principles. Exclusive jurisdiction over any dispute relating to the Services shall lie with the competent courts of Tel Aviv-Jaffa.
 
 ## 11. Contact Us
 
