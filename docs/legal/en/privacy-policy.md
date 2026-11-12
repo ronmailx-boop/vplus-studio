@@ -1,6 +1,6 @@
 # Privacy Policy - Vplus Studio
 
-**Last updated:** 10/10/2026
+**Last updated:** 12/11/2026
 
 ## 1. General
 
@@ -27,7 +27,7 @@ Depending on the specific application or service you use, we may collect the fol
 - **Information stored on your device (Local Storage):** for example, saving your language preference on this website (English/Hebrew) — this information is stored locally in your browser only and is not transmitted to us.
 - **Device permissions:** to the extent a specific app of ours requests permissions (such as camera, storage, or location), this will be detailed on that app's dedicated policy page and/or in the permission request screen itself, in accordance with the data-minimization principle.
 
-> **App-specific details:** [PLACEHOLDER: the specific types of data actually collected by each app should be completed here, or in a separate link, in accordance with Google Play's Data Safety requirements].
+> **App-specific details:** Each of our apps on Google Play has its own privacy policy, linked from the app's store page, which lists the types of data that app actually collects. For that app, its own policy takes precedence over this document.
 
 ## 4. Purposes of Use
 
@@ -43,7 +43,11 @@ We **do not** sell personal information to third parties.
 
 ## 5. Sharing Information with Third Parties
 
-As of the date of this update, the Website does not integrate any analytics, advertising, or tracking tools, and does not share information with any third-party provider beyond the Website's basic hosting infrastructure. Should we use external service providers in the future (such as Firebase, Google Analytics, or Google Play Services), this section will be updated accordingly, and such providers will be contractually obligated to maintain confidentiality of the information and to use it only for the purpose for which it was provided.
+The Website is hosted by Cloudflare (and in parallel on GitHub Pages). As with any internet connection, the hosting providers see your IP address and basic technical details of the request (such as the browser type) in order to serve and secure the Website.
+
+To count visitors we use Cloudflare Web Analytics. It uses no cookies, stores nothing on your device and does not track you across websites. It only gives us aggregated data, such as the number of page views, the country a visit came from and the browser type. The Website integrates no other advertising or tracking tools. The fonts on the Website are loaded from Google Fonts (see the Cookie Policy).
+
+Should we use additional external service providers in the future (such as Firebase, Google Analytics, or Google Play Services), this section will be updated accordingly, and such providers will be contractually obligated to maintain confidentiality of the information and to use it only for the purpose for which it was provided.
 
 Personal information may also be disclosed when required by law, court order, or to protect our legal rights.
 

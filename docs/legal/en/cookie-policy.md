@@ -1,6 +1,6 @@
 # Cookie Policy - Vplus Studio
 
-**Last updated:** 10/10/2026
+**Last updated:** 12/11/2026
 
 ## 1. General
 
@@ -25,7 +25,7 @@ This information:
 
 The Website uses fonts loaded from Google Fonts. Loading these fonts may cause your IP address to be transmitted to Google's servers in order to serve the font. Google may set cookies as part of this service in accordance with its own privacy policy. For more information, please refer to Google's privacy policy.
 
-As of the date of this update, no analytics, advertising, or social media tools are in use beyond what is described above. This section will be updated accordingly if such tools are added in the future.
+To count visitors, the Website uses Cloudflare Web Analytics, which works without cookies and without storing anything in your browser. Beyond what is described above, no analytics, advertising, or social media tools are in use. This section will be updated if such tools are added in the future.
 
 ## 5. Cookies in the Mobile Applications
 

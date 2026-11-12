@@ -36,6 +36,7 @@
   - הדמו השני: folio2 (נוגה – קליניקה לקוסמטיקה) – https://folio2.vplusstudio.app, הריפו `ronmailx-boop/folio2` (9.10.2026).
 - [ ] לעדכן את כתובת האתר ב-Google Play Console ל-https://vplusstudio.app (אחרי שעובד).
 - [ ] בדיקת התאמה סופית מול דרישות Google Play Organization Verification.
+- [x] **עדכון מסמכי פרטיות ועוגיות (12.11.2026, he+en, .md+.html):** נוסף Cloudflare Web Analytics (פעיל בכל ה-zone, בלי עוגיות) ואחסון אצל Cloudflare + GitHub Pages; ה-PLACEHOLDER של פירוט האפליקציות הוחלף בהפניה למדיניות הייעודית של כל אפליקציה ב-Google Play; תאריך עדכון 12/11/2026. ה-HTML עודכן ידנית במקביל ל-Markdown (אין סקריפט יצירה בריפו).
 
 ## Files Changed
 - `index.html` - עמוד הנחיתה המלא (דו-לשוני, לוגו, PWA meta tags).
@@ -72,6 +73,8 @@
   - בהתאם לרישום, ניתן כעת לשקול פתיחת חשבון מפתח ב-Google Play Console כ-"Organization" (קודם הומלץ "Individual" בהיעדר עוסק רשום).
 
 ## Current Focus
+**12.11.2026:** מסמכי הפרטיות והעוגיות עודכנו בענף `ccr-50de114d-jprvs6` (Web Analytics, אחסון, בלי PLACEHOLDER). אחרי המיזוג: לבדוק בטלפון את `/docs/legal/privacy-policy.html` ואת הגרסה האנגלית.
+
 **עדכון 14.10.2026:** מולאו ב-`docs/legal/` (he+en, .md+.html): שם העסק/חברה, מספר עוסק, כתובת (privacy-policy), וסמכות השיפוט (terms-of-service), לפי אישור עוסק פטור שהתקבל. נותרו פתוחים רק טלפון רכז הנגישות ופירוט נתוני אפליקציות (ראו Decisions).
 
 **עדכון 10.10.2026 (ב):** כתובת המייל הציבורית הוחלפה מ-`vplus.studio.apps@gmail.com` ל-**`vplusstudio.app@gmail.com`** (חשבון Gmail ייעודי חדש) - עודכן בכל האתר (index.html, demos.html, כל קישורי mailto וטקסט מוצג) ובכל 8 המסמכים המשפטיים (he+en, .md וה-.html שנוצר מהם).
